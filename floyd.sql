@@ -2,10 +2,10 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jul 2019 pada 21.43
--- Versi server: 10.3.16-MariaDB
--- Versi PHP: 7.1.30
+-- Host: localhost:3306
+-- Generation Time: Nov 28, 2019 at 04:37 AM
+-- Server version: 10.1.43-MariaDB
+-- PHP Version: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `floyd`
+-- Database: `dene4871_zaman`
 --
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tabel_gedung`
+-- Table structure for table `tabel_gedung`
 --
 
 CREATE TABLE `tabel_gedung` (
@@ -36,7 +36,7 @@ CREATE TABLE `tabel_gedung` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tabel_gedung`
+-- Dumping data for table `tabel_gedung`
 --
 
 INSERT INTO `tabel_gedung` (`id_gedung`, `nama_gedung`, `keterangan`, `gambar`) VALUES
@@ -103,7 +103,7 @@ INSERT INTO `tabel_gedung` (`id_gedung`, `nama_gedung`, `keterangan`, `gambar`) 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tabel_node`
+-- Table structure for table `tabel_node`
 --
 
 CREATE TABLE `tabel_node` (
@@ -113,7 +113,7 @@ CREATE TABLE `tabel_node` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tabel_node`
+-- Dumping data for table `tabel_node`
 --
 
 INSERT INTO `tabel_node` (`id`, `kode_gedung`, `jarak`) VALUES
@@ -195,7 +195,7 @@ INSERT INTO `tabel_node` (`id`, `kode_gedung`, `jarak`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `tabel_user`
+-- Table structure for table `tabel_user`
 --
 
 CREATE TABLE `tabel_user` (
@@ -206,7 +206,7 @@ CREATE TABLE `tabel_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `tabel_user`
+-- Dumping data for table `tabel_user`
 --
 
 INSERT INTO `tabel_user` (`id`, `nama_user`, `username`, `password`) VALUES
@@ -218,29 +218,29 @@ INSERT INTO `tabel_user` (`id`, `nama_user`, `username`, `password`) VALUES
 --
 
 --
--- Indeks untuk tabel `tabel_node`
+-- Indexes for table `tabel_node`
 --
 ALTER TABLE `tabel_node`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `tabel_user`
+-- Indexes for table `tabel_user`
 --
 ALTER TABLE `tabel_user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `tabel_node`
+-- AUTO_INCREMENT for table `tabel_node`
 --
 ALTER TABLE `tabel_node`
   MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
 
 --
--- AUTO_INCREMENT untuk tabel `tabel_user`
+-- AUTO_INCREMENT for table `tabel_user`
 --
 ALTER TABLE `tabel_user`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
